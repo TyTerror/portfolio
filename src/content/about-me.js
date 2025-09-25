@@ -1,30 +1,30 @@
 const statements = [
   {
-    input: 'Justin.location',
-    return: '"San Jose, CA"',
+    input: 'Tyler.location',
+    return: '"Houston, TX"',
   },
   {
-    input: 'Justin.contact',
+    input: 'Tyler.contact',
     return:
-      '["<a href="mailto:j.chi2241@gmail.com">j.chi2241@gmail.com</a>", "<a rel="noopener" href="https://www.linkedin.com/in/justin-chi-64b12b37">LinkedIn</a>", "<a rel="noopener" href="https://github.com/jchi2241">github</a>"]',
+      '["<a href="mailto:tyler.elias.ramsey@gmail.com">tyler.elias.ramsey@gmail.com</a>", "<a rel="noopener" href="https://www.linkedin.com/in/tylerramseyhu/">LinkedIn</a>", "<a rel="noopener" href="https://github.com/TyTerror">github</a>"]',
   },
   {
-    input: 'Justin.resume',
+    input: 'Tyler.resume',
     return:
-      '"<a rel="noopener" href="/justinchi_resume.pdf" target="_blank">justinchi.pdf</a>"',
+      '"<a rel="noopener" href="/tyler_ramsey_resume.docx" target="_blank">tyler_ramsey_resume.docx</a>"',
   },
   {
-    input: 'Justin.interests',
-    return: '["design", "basketball", "cooking", "traveling"]',
+    input: 'Tyler.interests',
+    return: '["coding", "football", "animals", "anime", "comics"]',
   },
   {
-    input: 'Justin.education',
+    input: 'Tyler.education',
     return:
-      '"B.Sc. Structural Engineering - University of California, San Diego"',
+      '"B.S. Computer Science - Howard University"',
   },
   {
-    input: 'Justin.languages',
-    return: '["Typescript", "React", "Go", "Python"]',
+    input: 'Tyler.languages',
+    return: '["Python", "C++", "C#", "Java", "PowerShell", "YAML", "SQL", "Bash", "JavaScript", "React", "HTML/CSS", "REST APIs"]',
   },
 ];
 

@@ -15,8 +15,8 @@ const Home = () => {
       <React.Fragment>
         <Hero />
         <About statements={statements} />
-        <h2 id="projects" className="section-title">
-          Projects
+        <h2 id="experience" className="section-title">
+          Experience
         </h2>
         <Projects projects={projects} />
         <div className="background" />
@@ -33,8 +33,8 @@ export default Home;
 
 export const Head = () => (
   <>
-    <title>Justin's Portfolio</title>
-    <meta name="description" content="Justin Chi's Portfolio" />
-    <meta name="keywords" content="justin chi, portfolio, web developer" />
+    <title>Tyler's Portfolio</title>
+    <meta name="description" content="Tyler Ramsey's Portfolio" />
+    <meta name="keywords" content="tyler ramsey, portfolio, software developer" />
   </>
 );

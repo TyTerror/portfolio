@@ -15,32 +15,8 @@ const ProjectSkills = props => {
   );
 };
 
-const ProjectLinks = props => {
-  const { github, preview } = props.links;
-  return (
-    <div className="project-links">
-      <a
-        href={preview}
-        rel="noopener noreferrer"
-        target="_blank"
-        className="project-link"
-      >
-        Live Demo <FontAwesomeIcon icon="external-link-alt" />
-      </a>
-      <a
-        href={github}
-        rel="noopener noreferrer"
-        target="_blank"
-        className="project-link secondary"
-      >
-        <FontAwesomeIcon icon={['fab', 'github']} /> View Source
-      </a>
-    </div>
-  );
-};
-
 const ProjectCard = props => {
-  const { image, title, description, skills, links } = props;
+  const { image, title, description, skills } = props;
 
   return (
     <div className="project-card">
@@ -50,7 +26,6 @@ const ProjectCard = props => {
         <h3>{title}</h3>
         <p dangerouslySetInnerHTML={{ __html: description }} />
         <ProjectSkills skills={skills} />
-        <ProjectLinks links={links} />
       </div>
     </div>
   );
@@ -65,7 +40,6 @@ const Projects = props => {
           title={proj.title}
           description={proj.description}
           skills={proj.skills}
-          links={proj.links}
           image={proj.image}
           key={proj.title}
         />

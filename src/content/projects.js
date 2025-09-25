@@ -1,105 +1,144 @@
-import travlr from 'images/travlr.jpg';
-import stockmarketchart from 'images/stockmarketchart.jpg';
-import wakeyalarmclock from 'images/wakeyalarmclock.jpg';
-import wakeybackgrounds from 'images/wakeybackgrounds.png';
-import calculator from 'images/calculator.jpg';
-import portfolio from 'images/portfolio.png';
-import tomsmetal from 'images/tomsmetal.jpg';
+import chevron_logo from 'images/chevron_logo.jpg';
+import dell_logo from 'images/dell_logo.jpeg';
+import intel_logo from 'images/intel_logo.jpg';
 
 // image can be any size. just make sure it is close to a 1:1 ratio - a square.
 
 const projects = [
   {
-    title: 'Travlr',
+    title: 'Chevron',
     description:
-      'Travel smarter by saving the places you want to go. This project was an assignment given for an interview. The requirements were to build a web-app that calls the Google Places API. It must include a map with pins and a list of locations, with some interactivity between the two.',
-    skills: ['HTML5', 'CSS3', 'Sass', 'JavaScript', 'ES6', 'ReactJS', 'Redux'],
-    image: travlr,
-    links: {
-      github: 'https://github.com/jchi2241/travlr',
-      preview: 'https://travlr.justinchi.me/',
-    },
-  },
-  {
-    title: 'Chart the Stock Market',
+      '<ul>' +
+      '<li>Served as Delfi Manager. Performed IAM (Identity Access Management) duties for 1800+ users across 140+ distinct departments, ensuring secure access provisioning and compliance in a large-scale enterprise environment.</li>' +
+      '<li>Automated biannual IRM (Information Risk Assessment) audits, slashing processing time from two months to one week through orchestration of robust and repeatable workflows.</li>' +
+      '<li>Optimized resource usage by automating Delfi subscription cleanup policies, preventing budget overruns and generating significant cost savings across the organization.</li>' +
+      '<li>Led automation initiative to identify and remove unused subscriptions through automated governance policies, optimizing resource allocation and reducing costs.</li>' +
+      '<li>Maintained and enhanced ADO (Azure DevOps) infrastructure, integrating tools like Ansible, Terraform, Docker, and GHAzDO (GitHub Advanced Security for Azure DevOps) to automate security scanning (SAST/DAST) and vulnerability remediation.</li>' +
+      '<li>Leveraged Power Automate to build scalable low-code solutions that enabled complex process automation and smoother handoffs to non-technical business units.</li>' +
+      '<li>Provided CI/CD pipeline support for both IaaS and PaaS deployments, embedding AI-driven tooling where applicable to improve deployment speed, reliability, and observability.</li>' +
+      '<li>Modernized our Quorum Land System and SAP S/4HANA infrastructure, migrating it to the cloud from an on-prem setup. Creating cloud based VMs with automated silent software installation, disaster recovery, and security logging across different production and regulatory compliance environments (S4 and ECC).</li>' +
+      '<li>Centralized cloud observability, telemetry, and security posture management across virtualized environments, delivering a new interface that improved scalability, availability, and proactive vulnerability detection.</li>' +
+      '<li>Automated ETL (Extract, Transform, and Load) processes to sanitize and transform SQL and ADLS (Azure Data Lake Storage) data; ensuring it was production-ready for use in analytics, reporting, and integration with external ERP applications.</li>' +
+      '<li>Administered business-critical Windows and Linux VMs, servers, and applications, ensuring stability and scalable performance.</li>' +
+      '<li>Designed and implemented secure, scalable LAN and WAN architectures across distributed environments, improving reliability and reducing downtime.</li>' +
+      '<li>Deployed and managed VPN solutions and secure cloud connectivity (DMVPN, IPSec, SSL VPN) for hybrid cloud and on-prem environments.</li>' +
+      '</ul>',
     description:
-      'This project is based off this <a href="https://www.freecodecamp.com/challenges/chart-the-stock-market">challenge</a>. Wrangled with styling HighCharts and learned the use of Promises. Data is from the <a href="https://developer.tradier.com/documentation">Tradier API</a>. Search autocomplete relies on the lookup endpoint and sometimes runs slow. Please be patient!',
-    skills: ['HTML5', 'CSS3', 'Sass', 'JavaScript', 'ES6', 'ReactJS'],
-    image: stockmarketchart,
-    links: {
-      github: 'https://github.com/jchi2241/stockmarketchart',
-      preview: 'https://stock.justinchi.me/',
-    },
-  },
-  {
-    title: 'Wakey Alarm Clock',
-    description:
-      'My first major app built with ReactJS and it was a tremendous learning experience. This project was created for a good friend - check out her <a href="http://www.xiaotongyuchi.com/wakeyalarm">mock-up</a>! Polymer components were taken directly from Google spec to ensure smooth animations on mobile (this was before Material Components existed).',
+      '<ul>' +
+      '<li>Developed, maintained, and enhanced internal tools using Python, C#, and YAML — improving processing speed, eliminating bugs, and adding new features to streamline workflows and boost productivity.</li>' +
+      '<li>Cut burn cycle time by 15% through streamlining processes and eliminating workflow bottlenecks with targeted improvements.</li>' +
+      '<li>Developed automated software test scripts to ensure validity/correctness of software and enable continuous integration. Used smoke/sanity tests, functional tests, integration tests, and regression tests.</li>' +
+      '<li>Implemented infrastructure-as-code with Terraform and ARM templates to enable reproducible, consistent, and reliable deployments.</li>' +
+      '<li>Containerized legacy workloads using Docker and orchestrated deployments via Azure Kubernetes Service (AKS) to improve scalability and resilience.</li>' +
+      '<li>Implemented monitoring and alerting with Azure Monitor, Application Insights, and Log Analytics to proactively detect and resolve infrastructure issues, reducing MTTR.</li>' +
+      '<li>Analyzed test data to determine pain points and recommend improvements to better meet customer needs.</li>' +
+      '<li>Oversaw IAM governance for internal testing infrastructure, maintaining secure and compliant user access; led weekly company-wide integration test cycles to ensure end-to-end system quality and readiness.</li>' +
+      '<li>Performed verification and validation of production defect fixes in Azure-hosted and on-prem applications, ensuring stability and functionality for large-scale deployments.</li>' +
+      '<li>Improved security of company code and reduced known vulnerabilities by over 50% year over rear (YoY) through utilization of CI/CD tools such as Jenkins and Black Duck and updating code libraries to use more secure APIs.</li>' +
+      '<li>Managed projects related to various hardware, including HDD (hard disk drive), SSD(solid state drive), and other embedded systems to ensure project stayed of track and met customer expectations.</li>' +
+      '<li>Managed hardware-related projects and coordinated cross-functional teams to deliver solutions for enterprise clients, including numerous Fortune 500 companies, ensuring timely delivery and client satisfaction.</li>' +
+      '</ul>',
     skills: [
-      'HTML5',
-      'CSS3',
-      'Sass',
+      'Python',
+      'C++',
+      'C#',
+      'Java',
+      'PowerShell',
+      'YAML',
+      'SQL',
+      'Bash',
       'JavaScript',
-      'ReactJS',
-      'Polymer',
-      'Material Design',
+      'React',
+      'HTML/CSS',
+      'REST APIs',
+      'Git',
+      'GitHub Actions',
+      'Jenkins',
+      'Azure DevOps',
+      'Ansible',
+      'Terraform',
+      'Docker',
+      'Kubernetes',
+      'Power BI',
+      'Power Automate',
+      'AutoCAD',
+      'Adobe Creative Suite',
     ],
-    image: wakeyalarmclock,
-    links: {
-      github: 'https://github.com/jchi2241/alarmclock',
-      preview: 'https://alarmclock.justinchi.me/',
-    },
+    image: chevron_logo,
+    links: {},
   },
   {
-    title: 'Wakey Weather Backgrounds',
+    title: 'Dell',
     description:
-      'Animated backgrounds for when the alarm is triggered in the <a href="https://justinchi.me/alarmclock/">Wakey Alarm Clock</a> app. CSS animations and a bit of JavaScript for the snow and rain. No external libraries.',
-    skills: ['HTML5', 'CSS3', 'Sass', 'JavaScript'],
-    image: wakeybackgrounds,
-    links: {
-      github: 'https://github.com/jchi2241/alarmclockweather_animations',
-      preview: 'https://weather-anim.justinchi.me/',
-    },
-  },
-  {
-    title: 'Google Calculator',
-    description:
-      'Applied techniques learned from <a href="https://watchandcode.com/p/practical-javascript">Practical Javascript</a> - writing requirements, iterating, and structuring app as an MVC. This really helped me build a much better foundation in JavaScript for web development. Aside from the Material Components library for the ripples, no frameworks were used. Design is based off the original <a href="https://play.google.com/store/apps/details?id=com.google.android.calculator&hl=en">Google Calculator on Android</a>.',
+      'Developed, maintained, and enhanced internal tools using Python, C#, and YAML — improving processing speed, eliminating bugs, and adding new features to streamline workflows and boost productivity. Cut burn cycle time by 15% through streamlining processes and eliminating workflow bottlenecks with targeted improvements. Developed automated software test scripts to ensure validity/correctness of software and enable continuous integration. Used smoke/sanity tests, functional tests, integration tests, and regression tests. Implemented infrastructure-as-code with Terraform and ARM templates to enable reproducible, consistent, and reliable deployments. Containerized legacy workloads using Docker and orchestrated deployments via Azure Kubernetes Service (AKS) to improve scalability and resilience. Implemented monitoring and alerting with Azure Monitor, Application Insights, and Log Analytics to proactively detect and resolve infrastructure issues, reducing MTTR. Analyzed test data to determine pain points and recommend improvements to better meet customer needs. Oversaw IAM governance for internal testing infrastructure, maintaining secure and compliant user access; led weekly company-wide integration test cycles to ensure end-to-end system quality and readiness. Performed verification and validation of production defect fixes in Azure-hosted and on-prem applications, ensuring stability and functionality for large-scale deployments. Improved security of company code and reduced known vulnerabilities by over 50% year over rear (YoY) through utilization of CI/CD tools such as Jenkins and Black Duck and updating code libraries to use more secure APIs. Managed projects related to various hardware, including HDD (hard disk drive), SSD(solid state drive), and other embedded systems to ensure project stayed of track and met customer expectations. Managed hardware-related projects and coordinated cross-functional teams to deliver solutions for enterprise clients, including numerous Fortune 500 companies, ensuring timely delivery and client satisfaction.',
     skills: [
-      'HTML5',
-      'CSS3',
-      'Sass',
+      'Python',
+      'C++',
+      'C#',
+      'Java',
+      'PowerShell',
+      'YAML',
+      'SQL',
+      'Bash',
       'JavaScript',
-      'ES6',
-      'Material Components',
+      'React',
+      'HTML/CSS',
+      'REST APIs',
+      'Git',
+      'GitHub Actions',
+      'Jenkins',
+      'Azure DevOps',
+      'Ansible',
+      'Terraform',
+      'Docker',
+      'Kubernetes',
+      'Power BI',
+      'Power Automate',
+      'AutoCAD',
+      'Adobe Creative Suite',
     ],
-    image: calculator,
-    links: {
-      github: 'https://github.com/jchi2241/material_calculator',
-      preview: 'https://calc.justinchi.me/',
-    },
+    image: dell_logo,
+    links: {},
   },
   {
-    title: 'Portfolio',
+    title: 'Intel',
     description:
-      'This page! Responsive website built with ReactJS. The site content is passed in as JSON data, auto-generating components for easy maintenance.',
-    skills: ['HTML5', 'CSS3', 'Sass', 'JavaScript', 'ReactJS'],
-    image: portfolio,
-    links: {
-      github: 'https://github.com/jchi2241/portfolio',
-      preview: 'https://www.justinchi.me/',
-    },
-  },
-  {
-    title: "Tom's Metal Site",
-    description:
-      'A revamped version of the website of the company at my first job. You can see the original site <a href="http://www.tomsmetal.com/">here</a>. The site supports mobile, tablet, and desktop sizes. Media queries only - no external libraries or JavaScript.',
-    skills: ['HTML5', 'CSS3'],
-    image: tomsmetal,
-    links: {
-      github: 'https://github.com/jchi2241/tomsmetal_site',
-      preview: 'https://tomsmetal.justinchi.me/',
-    },
+      '<ul>' +
+      '<li>Automated validation workflows for firmware and hardware compliance, developing scripts and tooling to accelerate testing against customer specifications and internal standards.</li>' +
+      '<li>Conducted in-depth defect analysis and system-level testing to identify critical gaps in new and custom product integrations, ensuring high-quality deliverables for enterprise customers.</li>' +
+      '<li>Assisted in coordinating non-functional testing activities—including performance, concurrency, and penetration testing—to validate robustness and security of platforms.</li>' +
+      '<li>Migrated legacy codebase from IPMI to Redfish APIs, modernizing management interfaces and improving maintainability, compatibility, and security of system interactions.</li>' +
+      '<li>Developed reusable test assets and documentation to streamline onboarding and reduce ramp-up time for new validation engineers.</li>' +
+      '<li>Collaborated with firmware, security, and platform engineering teams to resolve cross-domain issues and improve test coverage across multiple product lines.</li>' +
+      '</ul>',
+    skills: [
+      'Python',
+      'C++',
+      'C#',
+      'Java',
+      'PowerShell',
+      'YAML',
+      'SQL',
+      'Bash',
+      'JavaScript',
+      'React',
+      'HTML/CSS',
+      'REST APIs',
+      'Git',
+      'GitHub Actions',
+      'Jenkins',
+      'Azure DevOps',
+      'Ansible',
+      'Terraform',
+      'Docker',
+      'Kubernetes',
+      'Power BI',
+      'Power Automate',
+      'AutoCAD',
+      'Adobe Creative Suite',
+    ],
+    image: intel_logo,
+    links: {},
   },
 ];
 

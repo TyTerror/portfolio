@@ -9,8 +9,8 @@ const Navbar = () => {
   return (
     <div className="navbar-container">
       <nav className="navbar">
-        <a href="#projects" onClick={e => handleScroll(e, 'projects')}>
-          Projects
+        <a href="#experience" onClick={e => handleScroll(e, 'experience')}>
+          Experience
         </a>
         <a href="#contact" onClick={e => handleScroll(e, 'contact')}>
           Contact

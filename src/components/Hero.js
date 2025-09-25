@@ -9,15 +9,9 @@ const Hero = () => {
 
   return (
     <div className="hero-container">
-      <Typewriter className="hero-title" text="Justin Chi" />
+      <Typewriter className="hero-title" text="Tyler Ramsey" />
       <div className="hero-description">
-        I am a Software Engineer at SingleStore (formerly MemSQL).<br />My
-        passion is building simple, beautiful user experiences.<br />Check out
-        my{' '}
-        <a href="#projects" onClick={handleScroll}>
-          side-projects
-        </a>{' '}
-        below.
+        Results-driven Software Developer with 4+ years of experience designing and deploying scalable automation solutions in enterprise environments.<br />Proven track record of streamlining infrastructure, enhancing CI/CD pipelines, and reducing operational overhead through cloud-native tools and DevOps practices.<br />Adept at leveraging technologies like Azure, Terraform, Docker, and Power Automate to drive efficiency and innovation.<br />Passionate about building secure, maintainable systems that accelerate business outcomes, improve developer productivity and reduce operational cost.
       </div>
     </div>
   );
