@@ -63,7 +63,32 @@
         line-height: 38px;
         color: $grey;
         margin-top: 0;
-        margin-bottom: 35px;
+        margin-bottom: 10px; /* Reduced margin for combined title/role */
+
+        a {
+          color: $grey; /* Ensure link color matches title color */
+          text-decoration: none; /* Remove underline from link */
+
+          &:hover {
+            text-decoration: underline; /* Add underline on hover */
+          }
+        }
+      }
+
+      .project-location-timeline {
+        font-size: 1em;
+        color: $grey;
+        margin-bottom: 10px; /* Adjusted spacing below location/timeline */
+      }
+
+      .project-description {
+        margin-bottom: 20px; /* Adjusted overall description block margin */
+
+        .description-line {
+          margin-bottom: 0px; /* Removed space between bullet points */
+          line-height: 1.5em; /* Adjust line height for readability */
+          color: $grey;
+        }
       }
 
       .project-links {
@@ -110,15 +135,8 @@
         }
       }
 
-      p {
-        margin-bottom: 30px;
-        line-height: 27px;
-        color: $grey;
-      }
-
-      a {
-        font-weight: bold;
-      }
+      /* Removed original p styling as descriptions are now handled by .project-description .description-line */
+      /* Removed original a styling as links are now handled within h3 */
 
       .project-skills {
         display: flex;

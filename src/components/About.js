@@ -1,17 +1,38 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const About = props => {
+  const [isVisible, setIsVisible] = useState(true);
+  const [isMinimized, setIsMinimized] = useState(false);
+
+  const handleRedClick = () => {
+    setIsVisible(false);
+  };
+
+  const handleYellowClick = () => {
+    setIsMinimized(!isMinimized);
+  };
+
+  const handleGreenClick = () => {
+    setIsMinimized(false);
+  };
+
+  if (!isVisible) {
+    return null;
+  }
+
   return (
     <div className="about-container">
-      <div className="terminal">
+      <div className={`terminal ${isMinimized ? 'minimized' : ''}`}>
         <div className="terminal-header">
-          <div className="header-button red" />
-          <div className="header-button yellow" />
-          <div className="header-button green" />
+          <div className="header-button red" onClick={handleRedClick} />
+          <div className="header-button yellow" onClick={handleYellowClick} />
+          <div className="header-button green" onClick={handleGreenClick} />
         </div>
-        <div className="terminal-window">
-          <Statements statements={props.statements} />
-        </div>
+        {!isMinimized && (
+          <div className="terminal-window">
+            <Statements statements={props.statements} />
+          </div>
+        )}
       </div>
     </div>
   );

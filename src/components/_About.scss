@@ -6,6 +6,12 @@
   margin: 0 auto;
 
   .terminal {
+    &.minimized {
+      .terminal-window {
+        display: none;
+      }
+    }
+
     .terminal-header {
       height: 28px;
       background-color: #e4e3e5;

@@ -16,15 +16,31 @@ const ProjectSkills = props => {
 };
 
 const ProjectCard = props => {
-  const { image, title, description, skills } = props;
+  const { image, title, role, location, timeline, description, skills, links } = props;
+
+  const formattedDescription = description
+    .split('\n')
+    .map((line, index) => (
+      <p key={index} className="description-line">
+        {line.trim() !== '' ? `· ${line.trim()}` : ''}
+      </p>
+    ));
 
   return (
     <div className="project-card">
       <img className="project-image" src={image} alt="" />
       <div className="project-background" />
       <div className="project-content">
-        <h3>{title}</h3>
-        <p dangerouslySetInnerHTML={{ __html: description }} />
+        <h3>
+          <a href={links.website} target="_blank" rel="noopener noreferrer">
+            {title}
+          </a>{' '}
+          - {role}
+        </h3>
+        <p className="project-location-timeline">
+          {location} | {timeline}
+        </p>
+        <div className="project-description">{formattedDescription}</div>
         <ProjectSkills skills={skills} />
       </div>
     </div>
@@ -38,10 +54,14 @@ const Projects = props => {
       {projects.map(proj => (
         <ProjectCard
           title={proj.title}
+          role={proj.role}
+          location={proj.location}
+          timeline={proj.timeline}
           description={proj.description}
           skills={proj.skills}
           image={proj.image}
-          key={proj.title}
+          links={proj.links}
+          key={proj.title + proj.role}
         />
       ))}
     </div>
